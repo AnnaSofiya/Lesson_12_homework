@@ -1,0 +1,408 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: "Caveat", cursive;
+	background: #f5f5f5;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 50px;
+}
+/* ------------------------------ */
+body {
+	font-size: 0px;
+	font-family: "Roboto";
+	padding: 10px;
+}
+.header,
+.footer {
+	margin: 0px 0px 40px 0px;
+	padding: 15px;
+	text-align: left;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 900;
+	vertical-align: middle;
+	text-shadow: 3px 3px 5px rebeccapurple;
+	font-style: italic;
+}
+.main {
+}
+
+.sun {
+	display: inline-block;
+	margin: 10px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	vertical-align: middle;
+	background: yellow;
+	position: relative;
+	top: -550px;
+	left: 150px;
+}
+.sun:hover {
+	display: inline-block;
+	content: "";
+	box-shadow: 10px 10px 10px 30px rgb(249, 253, 0);
+}
+.sky {
+	display: inline-block;
+	background: skyblue;
+	width: 100%;
+	height: 400px;
+	perspective: 400px;
+	perspective-origin: 0 0;
+}
+.sky:hover {
+}
+.skyes {
+	display: inline-block;
+	margin: 20px;
+}
+.skyes:hover {
+	transform: translate(50px, 40px) scale3d(1.6, 1.5, 1.8);
+	z-index: 4;
+}
+.sky1 {
+	display: inline-block;
+	position: relative;
+	width: 70px;
+	height: 40px;
+	margin: 10px;
+	background: #328fff;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #0010f0;
+	border-radius: 50% 50% 0 0;
+}
+.sky1::before,
+.sky1::after {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	background: inherit;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #0010f0;
+}
+.sky1::before {
+	display: inline-block;
+	content: "";
+	left: 80%;
+	width: 60%;
+	height: 60%;
+	border-left: none;
+	border-radius: 50% 50% 50% 0;
+}
+.sky1::after {
+	display: inline-block;
+	content: "";
+	right: 80%;
+	width: 80%;
+	height: 80%;
+	border-right: none;
+	border-radius: 50% 50% 0;
+}
+.sky2 {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 60px;
+	margin: 40px;
+	background: #b6e1f5;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #0596f7;
+	border-radius: 50% 50% 0 0;
+}
+.sky2::before,
+.sky2::after {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	background: inherit;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #0596f7;
+}
+.sky2::before {
+	display: inline-block;
+	content: "";
+	left: 80%;
+	width: 60%;
+	height: 60%;
+	border-left: none;
+	border-radius: 50% 50% 50% 0;
+}
+.sky2::after {
+	display: inline-block;
+	content: "";
+	right: 80%;
+	width: 80%;
+	height: 80%;
+	border-right: none;
+	border-radius: 50% 50% 0;
+}
+
+.road {
+	background: slategrey;
+	width: 100%;
+	height: 260px;
+}
+.road::before {
+	display: inline-block;
+	content: "";
+	border-top: 17px dashed black;
+	height: 10px;
+	width: 100%;
+	position: relative;
+	top: 100px;
+}
+
+/* ------------------------------------ */
+
+.car {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 120px 50px 50px 30px;
+	width: 600px;
+	position: absolute;
+	top: 500px;
+}
+.car:hover {
+	transform: translate(50%, 0%) scale(2, 2);
+}
+.car__end {
+	display: inline-block;
+	width: 470px;
+	height: 90px;
+	background: rgb(255, 0, 234);
+	border-radius: 470px 470px 0px 0px;
+	position: relative;
+	border-right: 3px solid black;
+	border-left: 3px solid #000;
+	border-bottom: 3px solid #000;
+}
+.car__open {
+	display: inline-block;
+	background: black;
+	height: 20px;
+	width: 75px;
+	border-radius: 20px 0px 0px 20px;
+	position: relative;
+	top: 70px;
+	left: -40px;
+}
+.car__open::before {
+	display: inline-block;
+	content: "";
+	background: black;
+	height: 20px;
+	width: 75px;
+	border-radius: 0px 20px 20px 0px;
+	position: relative;
+	top: 0px;
+	left: 410px;
+}
+.car__item {
+	width: 20px;
+	height: 40px;
+	border-radius: 80px 0px 0px 80px;
+	background: blanchedalmond;
+	position: relative;
+	right: -450px;
+	top: -5px;
+	border: 3px solid black;
+	transform: rotate(-15deg);
+}
+.car__item::before {
+	display: inline-block;
+	content: "";
+	border: 52px solid transparent;
+	border-width: 0px 40px 155px;
+	border-color: rgba(1, 128, 231, 0.5) transparent;
+	position: relative;
+	top: -50px;
+	right: -45px;
+	transform: skew(150deg, 60deg);
+	transform: rotate(275deg);
+}
+
+.car__end::before {
+	display: inline-block;
+	content: "";
+	width: 30px;
+	height: 10px;
+	border-radius: 30px/15px;
+	background: rgb(49, 47, 47);
+	position: relative;
+	top: 0px;
+	left: 110px;
+}
+.car__end::after {
+	display: inline-block;
+	content: "";
+	width: 30px;
+	height: 10px;
+	background: rgb(49, 47, 47);
+	border-radius: 30px/15px;
+	position: relative;
+	top: -50px;
+	left: 255px;
+}
+
+.car__wheel {
+	display: inline-block;
+	position: relative;
+	top: -40px;
+	right: 240px;
+	height: 90px;
+	width: 90px;
+	background: rgb(95, 99, 117);
+	transform: skew(-5deg);
+	border-radius: 50%;
+	border: 15px solid #000;
+}
+
+.car__wheel::before {
+	display: inline-block;
+	content: "";
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border-radius: 50%;
+	box-shadow: 15px 15px 0 0 rgb(107, 9, 99);
+	transform: rotate(-135deg);
+	position: relative;
+	top: -10px;
+	right: 20px;
+}
+.car__wheel1 {
+	display: inline-block;
+	position: relative;
+	top: -40px;
+	right: 70px;
+	height: 90px;
+	width: 90px;
+	background: rgb(95, 99, 117);
+	transform: skew(-5deg);
+	border-radius: 50%;
+	border: 15px solid #000;
+}
+
+.car__wheel1::before {
+	display: inline-block;
+	content: "";
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border-radius: 50%;
+	box-shadow: 15px 15px 0 0 rgb(107, 9, 99);
+	transform: rotate(-135deg);
+	position: relative;
+	top: -10px;
+	right: 20px;
+}
+.car__beggin {
+	display: inline-block;
+	width: 300px;
+	height: 100px;
+	background: rgb(255, 0, 234);
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	border-radius: 200px 200px 0px 0px;
+	position: relative;
+	top: -262px;
+	right: -90px;
+}
+
+.window1,
+.window2 {
+	display: inline-block;
+	background: linear-gradient(to bottom, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 99%);
+	vertical-align: middle;
+}
+.window1 {
+	width: 130px;
+	height: 80px;
+	border: 2px solid black;
+	border-radius: 100px 0px 0px 0px;
+	position: relative;
+	top: 10px;
+	left: 5px;
+	margin-right: 10px;
+}
+
+.line,
+.line1 {
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	height: 90px;
+	width: 3px;
+	background: black;
+	position: absolute;
+	top: 0px;
+}
+.line1 {
+	height: 35px;
+	top: 35px;
+	background: honeydew;
+}
+.window2 {
+	width: 140px;
+	height: 80px;
+	border: 2px solid black;
+	border-radius: 0px 120px 0px 0px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+/* ------------------------ */
